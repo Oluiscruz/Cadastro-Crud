@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Numans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    color: #fff;
+    font-family: 'karla', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('images/background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container .main {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+}
+
+.container .main .title {
+    margin: 8px;
+}
+
+.container .main .endereco {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container .main .contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .main h4 {
+    margin: 12px;
+    font-size: 14pt;
+}
+
+input {
+    width: 600px;
+    padding: 12px 10px;
+    margin: 12px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    border: 1px solid rgb(19, 19, 165);
+    background-color: #18181dcb;
+    color: #fff;
+}
+
+input::placeholder {
+    color: #ccc;
+}
+
+input[type="date"] {
+    color: #ccc;
+}
+
+button {
+    width: 200px;
+    padding: 10px 10px;
+    margin: 20px;
+    border-radius: 4px;
+    background-color: #18181d;
+    color: #ccc;
+    border: 1px solid rgb(19, 19, 165);
+    cursor: pointer;
+    font-family: 'karla', sans-serif;
+    font-size: 13pt;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.63);
+}
+
+button:hover {
+    background-color: rgb(19, 19, 165);
+    color: #fff;
+    transform: scale(0.96);
+    transition: all 0.2s;
+}
+
+.error {
+    background-color: #18181dcb;
+    color: red;
+    font-size: 15px;
+}
+
+.res {
+    background-color: #18181da2;
+    border: 1px solid rgb(19, 19, 165);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.63);
+    width: 600px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.res h1 {
+    margin-top: 8px;
+}
+
+.res #listaUsuarios {
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 13pt;
+    color: #ccc;
+    margin: 8px;
+}
+
+body::-webkit-scrollbar {
+    width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #25252d;
+    border-radius: 8px;
+    border: 3px solid rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 700px) {
+    input {
+        width: 50%;
+    }
+    .res {
+        width: 80%;
+        margin-bottom: 50px;
+    }
+    .res #listaUsuarios {
+        text-decoration: none;
+        list-style-type: none;
+        font-size: 12pt;
+        color: #ccc;
+        margin: 8px;
+    }
+}

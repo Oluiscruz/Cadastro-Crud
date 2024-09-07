@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro | Oluiscruz</title>
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <div class="container">
+        <main class="main">
+            <div class="title">
+                <h1>Cadastro de usuário</h1>
+            </div>
+            <input type="text" placeholder="Nome" id="nome" required>
+            <span class="error" id="errorNome"></span>
+
+            <input type="date" name="idade" id="data" required>
+            <span class="error" id="errorData"></span>
+
+            <input type="number" name="cpf" id="cpf" placeholder="CPF" required>
+            <span class="error" id="errorCPF"></span>
+
+
+            <div class="endereco">
+                <h4>Endereço</h4>
+            </div>
+            <input type="number" placeholder="cep" id="cep" required>
+            <span class="error" id="errorCEP"></span>
+
+            <input type="text" placeholder="Rua/avenida" id="rua" required>
+            <span class="error" id="errorRua"></span>
+
+            <input type="number" placeholder="Número" name="numeroRua" id="numeroRua" required>
+            <span class="error" id="errorNumero"></span>
+
+            <input type="text" placeholder="Complemento (opcional)" id="complemento" required>
+
+            <input type="text" placeholder="Ponto De Referência" id="referencia" required>
+            <span class="error" id="errorReferencia"></span>
+
+
+            <div class="contato">
+                <h4>Contato</h4>
+                <input type="number" placeholder="Celular" id="celular" required>
+                <span class="error" id="errorCelular"></span>
+
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <span class="error" id="errorEmail"></span>
+            </div>
+
+            <button class="cadastrar" type="button" onclick="cadastrarUsuario()">CADASTRAR</button>
+
+            <div class="res">
+                <h1>Usuários</h1>
+                <ul id="listaUsuarios"></ul>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
+
+</html>
+
+</html>
